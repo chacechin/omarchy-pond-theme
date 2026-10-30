@@ -11,10 +11,22 @@ An [Omarchy](https://omarchy.org) theme that brings the look and feel of
 
 ## Install
 
+Clone it and link it into Omarchy's themes folder:
+
 ```sh
-omarchy theme install https://github.com/chacechin/omarchy-pond-theme
+git clone https://github.com/chacechin/omarchy-pond-theme ~/omarchy-pond-theme
+ln -s ~/omarchy-pond-theme ~/.config/omarchy/themes/pond
 omarchy theme set pond
 ```
+
+Update later with `git -C ~/omarchy-pond-theme pull`, then `omarchy theme set pond`.
+
+> **Why not `omarchy theme install`?** Themes installed from a git repo can't
+> supply Lua or terminal config, for safety. Omarchy would ignore this theme's
+> `hyprland.lua` (rounding, focus ring, blur, motion, gaps) and `kitty.conf`,
+> and you'd only get the colours and shell styling. A symlink to your own clone
+> is treated as your own theme, so every file applies. Read `hyprland.lua`
+> before using it, as you would any config you run.
 
 ## What you get
 
