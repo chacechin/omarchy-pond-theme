@@ -6,10 +6,9 @@ local inactive_border_color = "rgba(00000000)"
 
 hl.config({
   general = {
-    -- The near-transparent bar's 30px strip already reads as margin, so the
-    -- usual 10px top gap made the space under it look doubled. Top gap 0
-    -- leaves bar-icons-to-window spacing about equal to the other sides.
-    gaps_out = { top = 0, right = 10, bottom = 10, left = 10 },
+    -- Pond's 10px gutter on every side (niri layout gaps 10). The Pond
+    -- sidebar sits on the left, so the top edge needs the same gap as the rest.
+    gaps_out = 10,
     col = {
       active_border = active_border_color,
       inactive_border = inactive_border_color,
