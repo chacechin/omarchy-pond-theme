@@ -1,0 +1,107 @@
+/* Pond: Libadwaita / GTK colours (Nautilus etc.), neutral greys from Pond's
+   palette instead of near-black. Generated from Omarchy's gtk.css template. */
+
+/* GTK named colors */
+@define-color accent_color #cba6f7;
+@define-color accent_bg_color #cba6f7;
+@define-color accent_fg_color #0b0b0b;
+
+@define-color window_bg_color #2a2a2a;
+@define-color window_fg_color #f8f9f9;
+
+@define-color view_bg_color #262626;
+@define-color view_fg_color #f8f9f9;
+
+@define-color headerbar_bg_color #2f2f2f;
+@define-color headerbar_fg_color #ffffff;
+@define-color headerbar_backdrop_color #2f2f2f;
+@define-color headerbar_border_color #3d3d3d;
+
+@define-color sidebar_bg_color #232323;
+@define-color sidebar_fg_color #f8f9f9;
+@define-color sidebar_backdrop_color #232323;
+@define-color sidebar_border_color #3d3d3d;
+
+@define-color secondary_sidebar_bg_color #232323;
+@define-color secondary_sidebar_fg_color #f8f9f9;
+
+@define-color card_bg_color #333333;
+@define-color card_fg_color #f8f9f9;
+
+@define-color dialog_bg_color #2a2a2a;
+@define-color dialog_fg_color #f8f9f9;
+
+@define-color popover_bg_color #2f2f2f;
+@define-color popover_fg_color #f8f9f9;
+
+@define-color theme_selected_bg_color #3d3d3d;
+@define-color theme_selected_fg_color #ffffff;
+
+/* Legacy GTK3 aliases */
+@define-color theme_bg_color @window_bg_color;
+@define-color theme_fg_color @window_fg_color;
+@define-color theme_base_color @view_bg_color;
+@define-color theme_text_color @view_fg_color;
+
+/* Libadwaita 1.9+ CSS custom properties */
+:root, window, .nautilus-window {
+  --accent-color: #cba6f7;
+  --accent-bg-color: #cba6f7;
+  --accent-fg-color: #0b0b0b;
+
+  --window-bg-color: #2a2a2a;
+  --window-fg-color: #f8f9f9;
+
+  --view-bg-color: #262626;
+  --view-fg-color: #f8f9f9;
+
+  --headerbar-bg-color: #2f2f2f;
+  --headerbar-fg-color: #ffffff;
+  --headerbar-backdrop-color: #2f2f2f;
+  --headerbar-border-color: #3d3d3d;
+
+  --sidebar-bg-color: #232323;
+  --sidebar-fg-color: #f8f9f9;
+  --sidebar-backdrop-color: #232323;
+  --sidebar-border-color: #3d3d3d;
+
+  --secondary-sidebar-bg-color: #232323;
+  --secondary-sidebar-fg-color: #f8f9f9;
+
+  --card-bg-color: #333333;
+  --card-fg-color: #f8f9f9;
+
+  --dialog-bg-color: #2a2a2a;
+  --dialog-fg-color: #f8f9f9;
+
+  --popover-bg-color: #2f2f2f;
+  --popover-fg-color: #f8f9f9;
+}
+
+/* Explicit background overrides for Nautilus / Libadwaita views */
+window.nautilus-window,
+.nautilus-window {
+  background-color: var(--window-bg-color);
+  color: var(--window-fg-color);
+}
+
+.nautilus-window .navigation-sidebar,
+.navigation-sidebar {
+  background-color: var(--sidebar-bg-color);
+  color: var(--sidebar-fg-color);
+}
+
+.nautilus-window .view,
+.nautilus-window gridview,
+.nautilus-window columnview,
+.nautilus-window listview,
+.view {
+  background-color: var(--view-bg-color);
+  color: var(--view-fg-color);
+}
+
+.nautilus-window headerbar,
+headerbar {
+  background-color: var(--headerbar-bg-color);
+  color: var(--headerbar-fg-color);
+}
