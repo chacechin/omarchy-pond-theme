@@ -1,0 +1,32 @@
+mode = "dark"
+
+# Pond (bflycomputer/pond-interface) neutral shell surfaces + Kanagawa ANSI.
+accent = "#cba6f7"
+selection = "#3d3d3d"
+muted = "#727169"
+
+background = "#131313"
+dark_background = "#0e0e0e"
+darker_background = "#0b0b0b"
+lighter_background = "#1d1d1d"
+
+foreground = "#f8f9f9"
+dark_foreground = "#8a8a8a"
+light_foreground = "#d1d1d1"
+bright_foreground = "#ffffff"
+
+red = "#c34043"
+yellow = "#c0a36e"
+orange = "#ffa066"
+green = "#76946a"
+cyan = "#6a9589"
+blue = "#7e9cd8"
+magenta = "#957fb8"
+brown = "#8a7454"
+
+bright_red = "#e82424"
+bright_yellow = "#e6c384"
+bright_green = "#98bb6c"
+bright_cyan = "#7aa89f"
+bright_blue = "#7fb4ca"
+bright_magenta = "#938aa9"

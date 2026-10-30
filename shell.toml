@@ -1,0 +1,158 @@
+# Pond (bflycomputer/pond-interface) shell styling for the Omarchy shell.
+# Source tokens: shell/Theme.qml (daylight sidebar cards) and
+# shell/PanelStyle.qml (panels): surface #1D1D1D, border #3D3D3D,
+# hover #262626, pressed #303030, text #F8F9F9, accent #CBA6F7.
+# Corner radius follows Hyprland rounding (12, set in hyprland.lua).
+
+[bar]
+# Daylight sidebar card: near-clear black over the blurred sky.
+background       = "#000000"
+background-alpha = 0.15
+text             = "#f8f9f9"
+active           = "#cba6f7"
+scale-with-font  = true
+size-horizontal  = 26
+size-vertical    = 28
+
+[hyprland]
+active-border            = "#3d3d3d"
+active-border-foreground = "#3d3d3d"
+
+[controls]
+# Pond controls have no idle fill, a faint white outline, and white-tint hovers.
+normal-color        = "#ffffff"
+normal-fill-alpha   = 0.0
+normal-border       = "#ffffff"
+normal-border-width = 1
+normal-border-alpha = 0.10
+
+hover-cursor-color        = "#ffffff"
+hover-cursor-fill-alpha   = 0.04
+hover-cursor-border       = "#ffffff"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.20
+
+focus-color        = "#ffffff"
+focus-fill-alpha   = 0.04
+focus-border       = "#ffffff"
+focus-border-width = 1
+focus-border-alpha = 0.20
+
+# Selected/on: Pond's lime "enabled" mark on a dark-green track (PanelStyle
+# enabledMark #B0FF4F / enabledSurface #0C3723). Drives toggles and selected
+# segments; the low fill alpha keeps selected rows a faint tint.
+selected-color        = "#b0ff4f"
+selected-fill-alpha   = 0.14
+selected-border       = "#b0ff4f"
+selected-border-width = 0
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.08
+selection-fill-alpha = 0.35
+
+[spacing]
+scale = 1.0
+scale-with-font = true
+# Pond panels (PanelStyle): 44px rows inset 8px from the card edge, text
+# 16px into the row. Pinned values are raw px.
+popup-row-height = 44
+popup-padding    = 10
+row-padding-x    = 16
+
+[font]
+base-size = 12
+
+# Glass: translucent tint over Hyprland layer blur (rules in hyprland.lua).
+# Card alphas must stay above the blur rule's ignore_alpha (0.5); scrims
+# stay below it so only the card, not the whole screen, is frosted.
+[popups]
+background       = "#1d1d1d"
+background-alpha = 0.62
+text             = "#f8f9f9"
+border           = "#ffffff"
+border-alpha     = 0.14
+
+[tooltip]
+background       = "#1d1d1d"
+background-alpha = 0.97
+text             = "#f8f9f9"
+border           = "#3d3d3d"
+border-alpha     = 1.0
+
+[notifications]
+background       = "#1d1d1d"
+background-alpha = 0.62
+text             = "#f8f9f9"
+border           = "#ffffff"
+border-alpha     = 0.14
+countdown        = "#cba6f7"
+
+[launcher]
+# Pond's launcher (bflycomputer/vicinae Pond theme): #181818 at 70% over blur,
+# 1px #303030 border, #262626 row hover, white text.
+background                = "#181818"
+background-alpha          = 0.70
+text                      = "#ffffff"
+border                    = "#303030"
+border-alpha              = 1.0
+scrim                     = "#000000"
+scrim-alpha               = 0.4
+selected-background       = "#262626"
+selected-background-alpha = 1.0
+selected-text             = "#ffffff"
+selected-border           = "#ffffff"
+selected-border-alpha     = 0.10
+
+[menu]
+background                = "#1d1d1d"
+background-alpha          = 0.62
+text                      = "#f8f9f9"
+border                    = "#ffffff"
+border-alpha              = 0.14
+scrim                     = "#000000"
+scrim-alpha               = 0.4
+selected-background       = "#ffffff"
+selected-background-alpha = 0.04
+selected-text             = "#f8f9f9"
+selected-border           = "#ffffff"
+selected-border-alpha     = 0.10
+
+[polkit]
+background       = "#1d1d1d"
+background-alpha = 0.62
+text             = "#f8f9f9"
+text-error       = "#e82424"
+border           = "#ffffff"
+border-error     = "#e82424"
+border-alpha     = 0.14
+scrim            = "#000000"
+scrim-alpha      = 0.4
+accent           = "#cba6f7"
+
+[lock]
+background       = "#1d1d1d"
+background-alpha = 0.8
+text             = "#f8f9f9"
+placeholder      = "#8a8a8a"
+text-error       = "#e82424"
+border           = "#3d3d3d"
+border-active    = "#cba6f7"
+border-error     = "#e82424"
+border-alpha     = 1.0
+selection        = "#cba6f7"
+selection-alpha  = 0.45
+
+[image-picker]
+scrim                   = "#000000"
+scrim-alpha             = 0.4
+text                    = "#f8f9f9"
+selected-border         = "#f8f9f9"
+selected-border-alpha   = 1.0
+unselected-border       = "#ffffff"
+unselected-border-alpha = 0.10
+
+[herdr]
+# jankeesvw.herdr bar widget, using Pond's agent dot colors
+# (shell/minimap/TerminalIndicator.qml): orange = finished-unseen, lavender = working.
+done    = "#ff9f67"
+working = "#cba6f7"
