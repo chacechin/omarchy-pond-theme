@@ -40,7 +40,7 @@ hl.layer_rule({
 -- Pond motion (config/niri/shell/animation.kdl + shell PanelStyle):
 -- 200ms ease-out-quad window open, 200ms ease-out-cubic close (not linear),
 -- critically damped springs for movement/workspaces ~ emphasized decelerate
--- [0.2, 0, 0, 1], horizontal workspace slide, 220ms panel fade.
+-- [0.2, 0, 0, 1], vertical workspace slide (matches the sidebar map), 220ms panel fade.
 -- Hyprland speed unit = 100ms. OmaControl writes its own animations and
 -- rounding (16) after the theme loads, so these are (re)applied once the whole
 -- config has loaded. Window radius is Pond's geometry-corner-radius 12.
@@ -51,7 +51,7 @@ local function pond_motion()
   hl.animation({ leaf = "windowsIn", enabled = true, speed = 2, bezier = "pondEaseOutQuad", style = "popin 90%" })
   hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "pondEaseOutCubic", style = "popin 90%" })
   hl.animation({ leaf = "windowsMove", enabled = true, speed = 3, bezier = "pondEmphasized" })
-  hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "pondEmphasized", style = "slide" })
+  hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "pondEmphasized", style = "slidevert" })
   hl.animation({ leaf = "layersIn", enabled = true, speed = 2.2, bezier = "pondEmphasized", style = "fade" })
   hl.animation({ leaf = "layersOut", enabled = true, speed = 1.8, bezier = "pondEaseOutCubic", style = "fade" })
   hl.config({ decoration = { rounding = 12, rounding_power = 2 } })
