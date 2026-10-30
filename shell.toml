@@ -66,21 +66,21 @@ base-size = 12
 # Card alphas must stay above the blur rule's ignore_alpha (0.5); scrims
 # stay below it so only the card, not the whole screen, is frosted.
 [popups]
-background       = "#2c2c2c"
+background       = "#1d1d1d"
 background-alpha = 0.62
 text             = "#f8f9f9"
 border           = "#ffffff"
 border-alpha     = 0.14
 
 [tooltip]
-background       = "#2c2c2c"
+background       = "#1d1d1d"
 background-alpha = 0.97
 text             = "#f8f9f9"
 border           = "#3d3d3d"
 border-alpha     = 1.0
 
 [notifications]
-background       = "#2c2c2c"
+background       = "#1d1d1d"
 background-alpha = 0.62
 text             = "#f8f9f9"
 border           = "#ffffff"
@@ -88,23 +88,23 @@ border-alpha     = 0.14
 countdown        = "#cba6f7"
 
 [launcher]
-# Launcher: Pond's 70% glass and 1px border, lifted to the theme's greyer
-# #2C2C2C surface; white-8% row hover and #3D3D3D border keep contrast.
-background                = "#2c2c2c"
+# Pond's launcher (bflycomputer/vicinae Pond theme): #181818 at 70% over blur,
+# 1px #303030 border, #262626 row hover, white text.
+background                = "#181818"
 background-alpha          = 0.70
 text                      = "#ffffff"
-border                    = "#3d3d3d"
+border                    = "#303030"
 border-alpha              = 1.0
 scrim                     = "#000000"
 scrim-alpha               = 0.4
-selected-background       = "#ffffff"
-selected-background-alpha = 0.08
+selected-background       = "#262626"
+selected-background-alpha = 1.0
 selected-text             = "#ffffff"
 selected-border           = "#ffffff"
 selected-border-alpha     = 0.10
 
 [menu]
-background                = "#2c2c2c"
+background                = "#1d1d1d"
 background-alpha          = 0.62
 text                      = "#f8f9f9"
 border                    = "#ffffff"
@@ -118,7 +118,7 @@ selected-border           = "#ffffff"
 selected-border-alpha     = 0.10
 
 [polkit]
-background       = "#2c2c2c"
+background       = "#1d1d1d"
 background-alpha = 0.62
 text             = "#f8f9f9"
 text-error       = "#e82424"
@@ -130,7 +130,7 @@ scrim-alpha      = 0.4
 accent           = "#cba6f7"
 
 [lock]
-background       = "#2c2c2c"
+background       = "#1d1d1d"
 background-alpha = 0.8
 text             = "#f8f9f9"
 placeholder      = "#8a8a8a"
